@@ -1,0 +1,112 @@
+#######################################################################################################################################################################
+########################################################### ERDb ######################################################################################################
+#######################################################################################################################################################################
+
+######################################################## MOVIES #######################################################################################################
+CREATE database ERDb;
+
+USE ERDb;
+
+CREATE TABLE Movies
+    -> (Reference_Code CHAR(5) NOT NULL PRIMARY KEY,
+    -> Title VARCHAR(40),
+    -> Ratings DECIMAL(3,1),
+    -> Date_Of_Release DATE,
+    -> Runtime VARCHAR(15),
+    -> Genre VARCHAR(15),
+    -> Director VARCHAR(25),
+    -> Cast LONG);
+
+INSERT INTO Movies VALUES("#1104","The Dark Knight",9.0,"2008/07/18","2hrs 32 mins","Action","Christopher Nolan","Christian Bale,Heath Ledger,Aaron Eckhart");
+
+INSERT INTO Movies VALUES("#1267","The Matrix",8.7,"1999/03/31","2hrs 16 mins","Sci-Fi","The Wachowski Brothers","Keanu Reaves, Laurence Fishburne, Carrie-Anne Moss");
+
+INSERT INTO Movies VALUES("#1317","Palm Springs",7.4,"2020/07/10","1hrs 30 mins","Comedy","Max Barbakow","Andy Samberg, Cristin Milioti, Camila Mendes");
+
+INSERT INTO Movies VALUES("#1423","The Prestige",8.5,"2006/10/20","2hrs 10 mins","Mystery","Christopher Nolan","Christian Bale, Hugh Jackman, Scarlett Johansson");
+
+INSERT INTO Movies VALUES("#1479","Your Name(Kimi No Na Wa)",8.4,"2017/04/07","1hr 46 mins","Romance","Makoto Shinkai","Ryûnosuke Kamiki, Mone Kamishiraishi");
+
+INSERT INTO Movies VALUES("#1521","Miss Americana",7.4,"2020/01/31","1hr 25 mins","Documentary","Lana Wilson","Taylor Swift, Andrea Swift, Scott Swift");
+
+INSERT INTO Movies VALUES("#1627","Whiplash",8.5,"2015/02/20","1hr 46 mins","Drama","Damien Chazelle","Miles Teller, J.K. Simmons, Melissa Benoist");
+
+INSERT INTO Movies VALUES("#1735","The Secret Life Of Walter Mitty",7.3,"2013/12/25","1hr 54 mins","Slice Of Life","Ben Stiller","Ben Stiller, Kristen Wiig, Jon Daly");
+
+INSERT INTO Movies VALUES("#1923","A Silent Voice(Koe No Katachi)",8.2,"2016/09/17","2hrs 10 mins","Drama", "Naoko Yamada","Miyu Irino, Saori Hayami, Aoi Yûki");
+
+DESC Movies;
+
+SELECT*from Movies;
+
+#######################################################################################################################################################################
+
+########################################################################## TV SHOWS ###################################################################################
+CREATE TABLE Tv_Shows(Reference_Code CHAR(5) PRIMARY KEY NOT NULL,Title VARCHAR(40),Rating FLOAT(3),Year_of_Release INT(4),No_of_Seasons INT(3),Total_No_of_Episodes INT(5),Genre VARCHAR(10),Ongoing boolean);
+
+
+INSERT INTO Tv_Shows VALUES('#2151','Friends',8.9,1994,10,236,'Sitcom',FALSE);
+
+INSERT INTO Tv_Shows VALUES('#2187','Deathnote',9.0,2007,1,37,'Thriller',FALSE); 
+
+INSERT INTO Tv_Shows VALUES('#2253','Sherlock',9.1,2010,4,13,'Mystery',FALSE);
+
+INSERT INTO Tv_Shows VALUES('#2283','Brooklyn Nine-Nine',8.4,2013,7,143,'Comedy',TRUE);
+
+INSERT INTO Tv_Shows VALUES('#2713','Dark',8.8,2017,3,26,'Thriller',FALSE);
+
+INSERT INTO Tv_Shows VALUES('#2867',"Stein's Gate",8.8,2011,2,50,'Sci-Fi',FALSE);
+
+INSERT INTO Tv_Shows VALUES('#2895','Fullmetal Alchemist',9.1,2009,1,64,'Adventure',FALSE);
+
+INSERT INTO Tv_Shows VALUES('#2914','The Haunting of Hill House',8.7,2018,1,10,'Horror',TRUE);
+
+#######################################################################################################################################################################
+
+############################################################################# PC Games ################################################################################
+CREATE TABLE Video_Games(Reference_Code CHAR(5) NOT NULL PRIMARY KEY,Title VARCHAR(40),Ratings DECIMAL(3,1),Date_Of_Release DATE,Genre VARCHAR(15),Developing_Company VARCHAR(15),Platform VARCHAR(15));
+
+INSERT INTO video_games VALUES("#3012","Assassins Creed Brotherhood",8.7,"2010/11/16","Adventure","Ubisoft","PC,PS,Xbox");
+
+INSERT INTO video_games VALUES("#3046","Resident Evil 4",9.2,"2005/01/11","Horror","Capcom","PC");
+
+INSERT INTO video_games VALUES("#3106","Grand Theft Auto: San Andreas",9.4,"2004/10/26","Action","Rockstar Games","PC,PS,Xbox");
+
+INSERT INTO video_games VALUES("#3176","Call Of Duty:Modern Warfare",9.0,"2007/11/05","Thriller","Infinity Ward","PC,PS,Xbox");
+
+INSERT INTO video_games VALUES("#3187","Watchdogs",7.4,"2014/05/27","Sci-Fi","Ubisoft","PC,PS,Xbox");
+
+INSERT INTO video_games VALUES("#3236","Fifa 20",5.0,"2019/09/27","Sports","EA Sports","PC,PS,Xbox");
+
+INSERT INTO video_games VALUES("#3250","Max Payne",9.2,"2001/07/23","Mystery","Rockstar Games","PC");
+
+INSERT INTO video_games VALUES("#3876","God Of War",9.1,"2005/03/22","Adventure","Capcom","PC,PS");
+
+DESC video_games;
+
+SELECT*from video_games;
+
+#######################################################################################################################################################################
+
+########################################################################### ANIME #####################################################################################
+CREATE TABLE Anime(Reference_Code CHAR(5) PRIMARY KEY NOT NULL,Title VARCHAR(40),Rating FLOAT(3),Year_of_Release INT(4),No_of_Seasons INT(3),Total_No_of_Episodes INT(5),Genre VARCHAR(10),Creators VARCHAR(25),Ongoing boolean);
+
+
+
+INSERT INTO Anime VALUES('#1479','Kimi No Na Wa',8.4,2017,NULL,NULL,'Romance','Makoto Shinkai',NULL);
+
+INSERT INTO Anime VALUES('#1923','Koe No Katachi',8.2,2016,NULL,NULL,'Drama','Yoshitoki Ōima',NULL); 
+
+INSERT INTO Anime VALUES('#2067','Attack on Titan',8.8,2013,3,68,'Thriller','Hajime Isayama',TRUE); 
+
+INSERT INTO Anime VALUES('#2187','Deathnote',9.0,2007,1,37,'Thriller','Tsugumi Ohba',FALSE); 
+
+INSERT INTO Anime VALUES('#2294','Tokyo Ghoul',7.9,2014,3,48,'Horror','Sui Ishida',FALSE); 
+
+INSERT INTO Anime VALUES('#2678','One Punch Man',8.8,2015,2,36,'Comedy','ONE',TRUE); 
+
+INSERT INTO Anime VALUES('#2867',"Stein's Gate",8.8,2011,2,50,'Sci-Fi','Tatsuya Matsubara',FALSE); 
+
+INSERT INTO Anime VALUES('#2895','Fullmetal Alchemist',9.1,2009,1,64,'Adventure','Hiromu Arakawa',FALSE);
+
+#######################################################################################################################################################################
