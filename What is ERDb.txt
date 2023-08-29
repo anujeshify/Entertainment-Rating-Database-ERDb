@@ -1,0 +1,4 @@
+This software project is developed to automate the functionalities of a ENTERTAINMENT RATING MANAGEMENT SYSTEM. 
+The name of this database is ERDb which stands for Entertainment Rating Database. The purpose of the software project is to develop the Management Information System (MIS) to automate the record keeping of ratings and other details of Movies, Television Shows, Games and Anime with a view to enhance the decision making  of the functionaries. 
+This software, being simple in design and working, does not require much of training to users, and can be used as a powerful tool for automating an ENTERTAINMENT RATING DATABASE MANAGEMENT SYSTEM.
+During coding and design of the software Project, Python IDLE, as a powerful front-end tool is used for getting coding simplicity. As a back-end a powerful, open source RDBMS, MySQL is used.

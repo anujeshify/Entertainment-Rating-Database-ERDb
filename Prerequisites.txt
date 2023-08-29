@@ -1,0 +1,8 @@
+This software project is developed with the help of certain programs and some prerequisite python modules which facilitate the working of the program and make it presentable.
+
+1.	The Softwares used:
+•	Microsoft Windows® 10 Pro as Operating System.
+•	Python 3.8.5 as Front-end Development environment.
+•	MySQL as Back-end Sever with Database for Testing.
+•	Mysql.Connector to connect Python module with database.
+•	Tabulate module to present tuples fetched from database into tables in python.

@@ -1,0 +1,14 @@
+I have used mysql.connector and tabulate modules in our python code. Mysql.connector module helps establishing connectivity between python and MySQL. Tabulate module helps us to present tabular data in a nicely formatted table in python. Following are the steps to install both the modules. 
+
+I.	Steps to Install mysql.connector module:
+
+o	Step - 1 : Open command prompt from Start
+o	Step - 2 : Enter command “python -m pip install –upgrade” 
+o	Step - 3 : Enter command “install mysql.connector”
+
+2.	Installing tabulate module
+o	Step – 1 : Open command prompt from Start.
+o	Step – 2 : Enter command “pip install tabulate”.
+ 
+
+NOTE: You must have an active internet connection while downloading the prerequisites.
