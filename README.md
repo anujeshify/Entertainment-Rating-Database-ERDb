@@ -60,6 +60,7 @@ NOTE: You must have an active internet connection while downloading the prerequi
 ## Authors
 
 * **Anujesh Bansal** - *Initial work* - [anujeshify](https://github.com/anujeshify)
+* **Shaurya Jain**
 
 See also the list of [contributors](https://github.com/anujeshify/Entertainment-Rating-Database-ERDb/graphs/contributors) who participated in this project.
 
